@@ -1,0 +1,15 @@
+$(function(){
+	$('#picker').colpick({
+		flat:true,
+		layout:'hex',
+		submit:0,
+		color:'000000',
+		onChange:function(hsb,hex,rgb,el,bySetColor){
+			$('#tcolor_r').val(rgb.r);
+			$('#tcolor_g').val(rgb.g);
+			$('#tcolor_b').val(rgb.b);
+			$('#input_words').css('color','#'+hex)
+			console.log(hex);
+		}
+	});
+});

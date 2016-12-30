@@ -1,0 +1,62 @@
+td
+{
+    padding: 5px 0;
+}
+
+form
+{
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+img
+{
+    padding: 5px;
+    border: 1px solid #DDD;
+}
+
+tr:hover
+{
+    background-color: #DDD;
+    border-color: #DDD;
+}
+
+.img-box
+{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 700px)
+{
+    .img-box label
+    {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}
+
+.img-box img
+{
+    height: 150px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.img-box input[type=radio]
+{
+    display: none;
+}
+
+input[type=radio]:checked + img
+{
+    border-color: green;
+    transform: scale(1.05, 1.05);
+    margin: 0 5px;
+}
+
+.rgb input
+{
+    width: 55px;
+}
